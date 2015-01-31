@@ -45,6 +45,11 @@ $on-laptop:        800px;
   margin: 20px auto;
 }
 
+#mc-embedded-subscribe-form {
+  width: 350px;
+  margin: 0 auto;
+}
+
 // Using media queries with like this:
 // @include media-query($on-palm) {
 //     .wrapper {
