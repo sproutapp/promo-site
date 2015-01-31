@@ -1,0 +1,14 @@
+# Site settings
+title: Sprout
+email: hello@getsprouting.com
+description: > # this means to ignore newlines until "baseurl:"
+  Sprout helps you grow your home garden, by letting you know how your
+  plants are doing. You get realtime reports about temperature, air quality,
+  soil quality and water levels.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://getsprouting.com" # the base hostname & protocol for your site
+twitter_username: inf0rmer
+github_username:  sproutapp
+
+# Build settings
+markdown: kramdown
