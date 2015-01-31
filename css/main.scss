@@ -23,32 +23,8 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-// Width of the content area
-$content-width:    800px;
-
 $on-palm:          600px;
 $on-laptop:        800px;
-
-.site-wrapper-inner {
-  background: url(/images/cover.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.cover-heading {
-  background: url(/images/logo.png) no-repeat;
-  text-indent: -9999em;
-  width: 350px;
-  height: 210px;
-  margin: 20px auto;
-}
-
-#mc-embedded-subscribe-form {
-  width: 350px;
-  margin: 0 auto;
-}
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
@@ -61,4 +37,29 @@ $on-laptop:        800px;
     @media screen and (max-width: $device) {
         @content;
     }
+}
+
+.site-wrapper-inner {
+  background: url(/images/cover.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.cover-heading img {
+  margin: 0 auto;
+}
+
+#mc-embedded-subscribe-form {
+  width: 350px;
+  margin: 0 auto;
+}
+
+@include media-query($on-palm) {
+
+  #mc-embedded-subscribe-form {
+    width: 250px;
+    margin: 0 auto;
+  }
 }
