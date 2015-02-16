@@ -8,20 +8,19 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$text-color:       rgba(0, 0, 0, .4);
+$background-color: #13CB7B;
+$brand-color:      rgba(0, 0, 0, .25);
+$button-color:     rgba(0, 0, 0, .5);
+$input-text-color: rgba(255, 255, 255, .8);
+$placeholder-text-color: rgba(255, 255, 255, .5);
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -39,16 +38,42 @@ $on-laptop:        800px;
     }
 }
 
-.site-wrapper-inner {
-  background: url(/images/cover.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+body {
+  color: $text-color;
+  background: $background-color;
 }
 
 .cover-heading img {
   margin: 0 auto;
+}
+
+.form-control {
+  background: $brand-color;
+  color: rgba(255, 255, 255, .9);
+
+  border-color: rgba(0, 0, 0, .1);
+
+  &::-webkit-input-placeholder {
+  	color: $placeholder-text-color;
+  }
+  &::-moz-placeholder {
+  	color: $placeholder-text-color;
+  }
+  &:-moz-placeholder {   /* Older versions of Firefox */
+  	color: $placeholder-text-color;
+  }
+  &:-ms-input-placeholder {
+  	color: $placeholder-text-color;
+  }
+}
+
+.btn {
+  background-color: $button-color;
+  color: $input-text-color;
+
+  &:hover {
+    color: white;
+  }
 }
 
 #mc-embedded-subscribe-form {
